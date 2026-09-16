@@ -1,3 +1,49 @@
+# varnish 1.1.2 [2026-08-26]
+
+## MAINTENANCE
+
+* Add ellipsis to prev/next breadcrumbs
+* Bump various dependencies
+
+
+# varnish 1.1.1 [2026-05-19]
+
+## HOTFIX RELEASE
+
+* Fix sidebar background colour
+* Improve the lesson header to tidy it up, and improve the look and feel of the progress bar
+* Remove accDescr property in figure caption, and retain in the mermaid desc property
+  PR [217](https://github.com/carpentries/varnish/pull/217) (reported @bielsnohr #189)
+
+
+# varnish 1.1.0 [2026-04-15]
+
+## ACCESSIBILITY
+
+* Fix mermaid title and description use in figure captions - **NB this will
+  require the addition of accTitle elements in all associated lessons that 
+  use mermaid diagrams**
+* Fix overall CSS color palette to pass WCAG contrast checks in many 
+  elements across light and dark mode
+* Fix li text colour in callouts in light mode
+* Fix orphaned li elements in the theme selector menu
+* Fix display of lesson title on mobile
+* Fix various invalid ARIA properties
+* Add javascript workaround to set tabindex properly on language 
+  codeblock elements - these cannot be set in sandpaper as downlit
+  simply removes any extra codeblock classes or attributes (relevant
+  comment here: https://github.com/r-lib/downlit/pull/160#issuecomment-4200380782)
+  
+## MAINTENANCE
+
+* Update MathJax from v2 to v4 to fix accessibility issues and be more up to date
+* Update README to state node24 should be installed
+
+## MISC
+
+* Thanks to @josenino95 as a new contributor for raising the WCAG issues - welcome!
+
+
 # varnish 1.0.9 [2025-12-03]
 
 ## HOTFIX RELEASE
